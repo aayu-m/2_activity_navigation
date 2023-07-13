@@ -9,23 +9,31 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:text="Welcome !!"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" android:id="@+id/textView"/>
+            app:layout_constraintTop_toTopOf="parent" android:id="@+id/textView" android:textColor="#044C10"
+            android:textSize="24sp" android:textStyle="bold"/>
     <Button
             android:text="Close app"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/go_back" tools:layout_editor_absoluteY="274dp"
-            android:onClick="close_app" app:layout_constraintEnd_toStartOf="@+id/textView"/>
+            android:layout_height="wrap_content" android:id="@+id/closeApp" tools:layout_editor_absoluteY="56dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView" android:layout_marginEnd="12dp"/>
     <Button
-            android:text="Second Page"
+            android:text="Go to Second Page"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/switch_to_second_activity"
-            android:onClick="go_to_second"
+            android:layout_height="wrap_content" android:id="@+id/firstToSecond"
             app:layout_constraintStart_toStartOf="@+id/textView" app:layout_constraintEnd_toEndOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginTop="40dp"/>
+    <Button
+            android:text="GO to Third page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/firstToThird"
+            app:layout_constraintEnd_toEndOf="@+id/firstToSecond"
+            app:layout_constraintStart_toStartOf="@+id/firstToSecond"
+            app:layout_constraintTop_toBottomOf="@+id/firstToSecond" android:layout_marginTop="16dp"
+            app:layout_constraintHorizontal_bias="0.466"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

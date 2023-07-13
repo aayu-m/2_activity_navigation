@@ -8,19 +8,27 @@
         tools:context=".Activity2">
 
     <Button
-            android:text="Third Page"
-            android:id="@+id/switch_to_third_activity"
+            android:text="Go to Third Page"
+            android:id="@+id/secondToThird"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="274dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="111dp"
-            android:onClick="go_to_third"
     />
     <Button
             android:text="Go Home"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/go_back" tools:layout_editor_absoluteY="274dp"
-            tools:layout_editor_absoluteX="111dp"
-            android:onClick="go_back"/>
+            android:layout_height="wrap_content" android:id="@+id/goBack"
+            app:layout_constraintEnd_toEndOf="@+id/secondToThird"
+            app:layout_constraintStart_toStartOf="@+id/secondToThird"
+            app:layout_constraintBottom_toTopOf="@+id/secondToThird" android:layout_marginBottom="60dp"/>
+    <TextView
+            android:text="Welcome to Second page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="@+id/goBack" app:layout_constraintStart_toStartOf="@+id/goBack"
+            app:layout_constraintBottom_toTopOf="@+id/goBack" android:layout_marginBottom="60dp"
+            android:textSize="20sp" android:textColor="#025C1C" android:textAlignment="viewStart"
+            android:textStyle="bold"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,7 +10,22 @@
     <Button
             android:text="Go Home"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/go_back" tools:layout_editor_absoluteY="274dp"
-            tools:layout_editor_absoluteX="111dp"
-            android:onClick="go_back"/>
+            android:layout_height="wrap_content" android:id="@+id/goHome"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="180dp"/>
+    <Button
+            android:text="Go Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/goBack"
+            app:layout_constraintEnd_toEndOf="@+id/goHome" app:layout_constraintStart_toStartOf="@+id/goHome"
+            app:layout_constraintBottom_toTopOf="@+id/goHome" android:layout_marginBottom="60dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="1.0"/>
+    <TextView
+            android:text="Wecome to Third page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="@+id/goBack" app:layout_constraintStart_toStartOf="@+id/goBack"
+            app:layout_constraintBottom_toTopOf="@+id/goBack" android:layout_marginBottom="60dp"
+            android:textSize="20sp" android:textColor="#025A25" android:textStyle="bold"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
