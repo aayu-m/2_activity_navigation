@@ -35,5 +35,14 @@
             app:layout_constraintStart_toStartOf="@+id/firstToSecond"
             app:layout_constraintTop_toBottomOf="@+id/firstToSecond" android:layout_marginTop="16dp"
             app:layout_constraintHorizontal_bias="0.466"/>
+    <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/navigate_activity1" android:textColor="#044C10"
+            android:textSize="24sp" android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView" app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginTop="20dp"
+            />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
