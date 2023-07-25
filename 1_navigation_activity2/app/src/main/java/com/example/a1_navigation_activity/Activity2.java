@@ -2,7 +2,9 @@ package com.example.a1_navigation_activity;
 
 import android.content.Intent;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +20,10 @@ public class Activity2 extends AppCompatActivity {
         String message= getIntent().getStringExtra("navigate_from");
         TextView textMsg = (TextView)findViewById(R.id.navigate_activity2);
         textMsg.setText(message);
+
+
+
+
 
         Button buttonSecondToThird = (Button) findViewById(R.id.secondToThird);
         buttonSecondToThird.setOnClickListener(new View.OnClickListener() {

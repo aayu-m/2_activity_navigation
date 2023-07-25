@@ -1,6 +1,7 @@
 package com.example.a1_navigation_activity;
 
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -40,6 +41,17 @@ public class Activity3 extends AppCompatActivity {
                 i.putExtra("navigate_from","From Third");
                 setResult(3);
                 startActivityForResult(i,2);
+            }
+        });
+
+        Button buttonThirdToRecycler = (Button) findViewById(R.id.goToRecyclerView) ;
+        buttonThirdToRecycler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("Myapp", "clicked");
+                Intent i = new Intent(Activity3.this, RecyclerView.class);
+                startActivity(i);
+                
             }
         });
 
