@@ -7,10 +7,13 @@ public class Movie {
     private String writer;
     private String releaseDate;
 
+
+
     public Movie(String movieName, String writer, String releaseDate){
         this.movieName = movieName;
         this.writer = writer;
         this.releaseDate = releaseDate;
+
 
     }
 
@@ -25,4 +28,6 @@ public class Movie {
     public String getReleaseDate() {
         return releaseDate;
     }
+
+
 }

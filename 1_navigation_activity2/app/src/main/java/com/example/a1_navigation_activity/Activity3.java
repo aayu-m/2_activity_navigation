@@ -49,9 +49,19 @@ public class Activity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.d("Myapp", "clicked");
-                Intent i = new Intent(Activity3.this, RecyclerView.class);
+                Intent i = new Intent(Activity3.this, RecyclerViewMovie.class);
                 startActivity(i);
                 
+            }
+        });
+        Button buttonThirdToAppAcq = (Button) findViewById(R.id.goToAppAcquisition) ;
+        buttonThirdToAppAcq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Activity3.this, RecyclerViewApp.class);
+                startActivity(i);
+                Log.d("Myapp", "clicked for App Acq");
+
             }
         });
 

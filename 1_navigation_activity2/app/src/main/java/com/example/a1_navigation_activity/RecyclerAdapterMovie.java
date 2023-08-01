@@ -1,25 +1,23 @@
 package com.example.a1_navigation_activity;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import org.w3c.dom.Text;
 
 import java.util.List;
 
-public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class RecyclerAdapterMovie extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private static final int type =1;
     private final Context context;
     private final List<Object>list;
 
 
-    public RecyclerAdapter(Context context, List<Object>list){
+    public RecyclerAdapterMovie(Context context, List<Object>list){
         this.context= context;
         this.list=list;
     }
@@ -40,7 +38,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item, parent, false);
+        View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_movie, parent, false);
         return new ViewHolder(layoutView);
     }
 

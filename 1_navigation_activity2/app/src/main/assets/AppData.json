@@ -1,0 +1,38 @@
+[
+  {
+    "appDescription": "Easily create surveys, quizzes and polls.",
+    "appId": "81fef3a6-72aa-4648-a763-de824aeafb7d",
+    "developedBy": "Microsoft Corporation",
+    "iconUrl": "https://statics.teams.cdn.office.net/evergreen-assets/apps/81fef3a6-72aa-4648-a763-de824aeafb7d_largeImage.png?v=1.1.5",
+    "isLOB": false,
+    "isSideloaded": false,
+    "keywords": "",
+    "name": "Forms",
+    "version": "1.1.5",
+    "categoryId": "Recent"
+  },
+  {
+    "appDescription": "Stay organized across all your team and individual tasks.",
+    "appId": "com.microsoft.teamspace.tab.planner",
+    "developedBy": "Microsoft Corporation",
+    "iconUrl": "https://statics.teams.cdn.office.net/evergreen-assets/apps/com.microsoft.teamspace.tab.planner_largeImage.png?v=1.2.10",
+    "isLOB": false,
+    "isSideloaded": false,
+    "keywords": "",
+    "name": "Tasks by Planner and To Do",
+    "version": "1.2.10",
+    "categoryId": "Recent"
+  },
+  {
+    "appDescription": "Tiny breaks to share and play, built right into your day.",
+    "appId": "693aa4f0-e16c-11ea-ab9b-11514b3de7ae",
+    "developedBy": "Breakthru Immersive, INC",
+    "iconUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/693aa4f0-e16c-11ea-ab9b-11514b3de7ae_largeImage.png?v=1.27.1",
+    "isLOB": false,
+    "isSideloaded": false,
+    "keywords": "",
+    "name": "Breakthru",
+    "version": "1.27.1",
+    "categoryId": "Recent"
+  }
+]

@@ -4,22 +4,16 @@ import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import com.google.gson.stream.JsonReader;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.io.FileReader;
-
-public class RecyclerView extends AppCompatActivity {
+public class RecyclerViewMovie extends AppCompatActivity {
 
     private androidx.recyclerview.widget.RecyclerView recyclerView;
     private List<Object> listItems = new ArrayList<>();
@@ -33,11 +27,11 @@ public class RecyclerView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view);
 
-        recyclerView = (androidx.recyclerview.widget.RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = (androidx.recyclerview.widget.RecyclerView) findViewById(R.id.recycler_view_movie);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        adapter = new RecyclerAdapter(this,listItems);
+        adapter = new RecyclerAdapterMovie(this,listItems);
         recyclerView.setAdapter(adapter);
         
         addItemsfromJson();

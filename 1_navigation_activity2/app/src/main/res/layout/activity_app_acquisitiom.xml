@@ -5,12 +5,13 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".RecyclerViewMovie">
+        tools:context=".RecyclerViewApp">
 
     <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view_movie"
+            android:id="@+id/recycler_view_app"
             android:scrollbars="vertical"
-            tools:listitem="@layout/list_item_movie"
+            tools:listitem="@layout/list_item_app"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
